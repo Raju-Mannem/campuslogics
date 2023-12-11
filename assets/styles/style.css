@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+*{
+    background: #F0F4F6;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    width: 100%;
+    padding: 1%;
+    align-items: space-evenly;
+    justify-content: space-between;
+}
+header .figure{
+    min-width: 50px;
+    max-width: 250px;
+    min-height: 90%;
+    display: inline-block;
+}
+.shdiv{
+    min-height: 5vh;
+    max-height: 6vh;
+    min-width: 40vw;
+    border: 1px solid #A9A9A9;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+.shdiv input[type="search"]{
+    all :unset;
+    padding: 0 20px;
+    height: 100%;
+    width: 90%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+}
+.search-icon{
+    size: large;
+    height: 100%;
+    min-width: 2vw;
+    max-width: 3vw;
+    padding: 0.2% 1%;
+    fill: #ffffff;
+    float: right;
+    background: #0B2447;
+    stroke-width: 5px;
+}
+.addbtn a{
+    background: #0B2447;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 2vh 1vw;
+    min-width: 10%;
+    text-align: center;
+    line-height: 3;
+}
+nav{
+    background: #0B2447;
+    width: 100%;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+}
+nav ul li{
+    background: transparent;
+    height: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    background: transparent;
+    color: #ffffff;
+    padding: 0 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+nav ul li a:hover{
+    color: #0B2447;
+    background-color: #ffffff;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 70%;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: #0B2447;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li, .sidebar li a{
+    width: 100%;
+    color:#ffffff;
+}
+.sidebar li:nth-child(1) a{
+    margin-left: 70%;
+    max-width: fit-content;
+    border-radius: 50%;
+}
+#mobile-searchbar{
+    display: none;
+    width: 100%;
+    max-height: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #A9A9A9;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+#mobile-searchbar input[type="search"]{
+    all: unset;
+    padding: 0 20px;
+    height: 100%;
+    width: 75%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+}
+#mobile-searchbar svg{
+    size: large;
+    position: relative;
+    height: 100%;
+    fill: #ffffff;
+    width: 10%;
+    padding: 2% 1%;
+    float: right;
+    background: #0B2447;
+    stroke-width: 5px;
+}
+.menu-button, .mobile-logo, .mobile-search-icon{
+    display: none;
+    background: transparent;
+}
+@media(max-width: 800px){
+    header{
+        display: none;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button, .mobile-logo, .mobile-search-icon{
+        display: inline-block;
+        background: transparent;
+    }
+    .mobile-logo img{
+        min-width: 80px;
+        max-width: 180px;
+        height: 70%;
+        margin: 3% 0;
+        background: transparent;
+        padding: 0 2%;
+    }
+    .mobile-search-icon{
+        min-width: 80px;
+        max-width: 150px;
+        height: 60%;
+        margin-top: 10%;
+        color: #ffffff;
+        margin-left: 30%;
+    }
+    .addbtn{
+        display: none;
+    }
+    .mrq-sec{
+        padding: 0;
+        width: 100%;
+        height: 4.5vh;
+    }
+    .mrq-sec p{
+        padding: 0;
+        margin-left: auto;
+        min-width: 25%;
+        max-width: 30%;
+        max-height: 4vh;
+        display: inline-block;
+        font-size: 0.6rem;
+    }
+    .mrq-sec marquee{
+        max-width: 75%;
+        max-height: 4vh;
+    }
+    .mrq-sec marquee a{
+        font-size: 0.5rem;
+    }
+    .lside{
+        width: 100%;
+    }
+    .lside figure{
+        max-width: 19%;
+        display: inline-flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        max-height: 50px;
+        padding: 1%;
+        border-radius: 0;
+    }
+    .lside figure .loc{
+        min-width: 55px;
+        max-height: 30px;
+        display: block;
+        border-radius: 0;
+    }
+    .lside figure figcaption{
+        font-size: 0.3rem;
+        width: 100%;
+        text-align: center;
+    }
+    .crs div figcaption{
+        font-size: 0.6rem;
+        border-radius: 2px !important;
+        height: 10px;
+        padding-top: 20px !important;
+    }
+    #rside .flsm{
+        max-width: 50% !important;
+        margin: 8%;
+    }
+    footer .footl, .footm, .footr{
+        margin: 0 5%;
+        display: block;
+        width: 100%;
+    }
+    #resume-sec #res-type figure{
+        border: 1px solid #808080;
+        width: 50vw;
+        height: 20vh !important;
+        margin: 2%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    #resume-sec #res-type figure img{
+        width: 100% !important;
+        height: 90% !important;
+    }
+    #resume-sec #res-type figure figcaption{
+        font-size: 0.5rem;
+    }
+    article #ar-img{
+        all: unset;
+        float: left;
+        width: 25%;
+        margin: 1% 5% 0 0;
+        object-fit: contain;
+        border-radius: 5px;
+        background: transparent;
+        height: 70px !important;
+    }
+}
+@media(min-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+a{
+    background: transparent;
+}
+.crs{
+    width: 100%;
+    padding: 3% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    /* background: url(../images/city.jpg) no-repeat fixed center; */
+}
+.crs div{
+    background: transparent;
+    min-width: 25%;
+    flex: 1 1 0; 
+    margin: 5px; 
+}
+.crs div figcaption{
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+    padding: 1%;
+    color: #0B2447;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 2vh;
+    min-height: 7vh;
+    font-family: 'Alumni Sans Inline One', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.crs div figcaption:hover{
+    color: #ffffff;
+    font-weight: bold;
+    background: #0B2447;
+}
+.mrq-sec{
+    width: 100%;
+    background: #ffffff;
+    padding: 0 2%;
+    z-index: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+.mrq-sec p{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    padding: 1%;
+    background: #0000ff;
+    width: 12vw;
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
+    display: inline-block;
+}
+.mrq-sec marquee{
+    color: #0000ff;
+    display: inline-block;
+    width: 82vw;
+    background: transparent;
+}
+.mrq-sec marquee a{
+    background: transparent;
+    font-family: 'Lato', sans-serif;
+    margin: 0 5%;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3% 0;
+    width: 100%;
+}
+aside{
+    color: #000000;
+    flex: 1 1 0;
+    margin: 0 2%;
+}
+aside figure{
+    font-family: 'robotica';
+    margin: 0 0 10% 0;
+    padding: 5%;
+    border: 1px solid #9B9C9F;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    background: #fff;
+}
+.loc{
+    height: 7vh;
+    border-radius: 10px;
+}
+aside figure figcaption{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    width: 50%;
+    padding: 2%;
+    font-size: 0.7rem;
+    background: transparent;
+    color: #000000;
+}
+article{
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+    border-radius: 5px;
+    padding: 3%;
+    margin: 0 2% 3% 2%;
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 1px solid #9B9C9F;
+}
+article img{
+    float: left;
+    width: 25%;
+    height: 200px;
+    margin: 0 5% 0 0;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 5px;
+    background: transparent;
+}
+article div{
+    vertical-align: top;
+    background: transparent;
+    max-width: 750px;
+    height: 100%;
+}
+article div p{
+    background: transparent;
+    color: #1E2132;
+}
+article div h6{
+    color: #fff;
+    background: #0000ff;
+    display: inline;
+    margin: 5% 2%; 
+    padding: 0.5% 1%;
+    border-radius: 10%;
+    font-size: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+article h2, #job-page h1, #tja1, #tja2, #tja3, #tja4, #tja5, #tja6{
+    background: transparent;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    margin: 0 0 1% 0;
+}
+article #com-job-desc{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    padding: 0 2% 0 0;
+    width: 100%;
+    line-height: 2;
+}
+article #date{
+    color: #776B5D;
+    font-size: 0.7rem;
+    margin: 0 0 1% 0;
+    background: transparent;
+}
+#job-sec, #intern-sec, #resume-sec{
+    min-width: 75%;
+    padding: 0 2%;
+    max-width: 780px;
+}
+.job-div img{
+    min-width: 50%;
+    max-width: 100%;
+    min-height: 10vh;
+    max-height: 40vh;
+    float: none;
+    margin-left: 10%;
+}
+#job-sec h1 {
+    font-size: 1.4rem;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2%;
+}
+#job-sec h2{
+    background: linear-gradient(135deg,#020381,#2874fc);
+    color: #ffffff;
+    padding: 2%;
+}
+#job-sec p{
+    margin: 0 2%;
+}
+#job-sec ul{
+    margin: 0 5%;
+    background: transparent;
+}
+#job-sec ul li,#job-sec p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    background: #ffffff;
+}
+#job-sec ul li{
+    margin: 25px;
+}
+#job-sec .job-div a{
+    font-family: 'Montserrat', sans-serif;
+    margin: 2%;
+    padding: 0.5% 3%;
+    border-radius: 2px;
+    display: inline-block;
+    color: #fff;
+    background: #ff6347;
+}
+#job-sec .job-div #sm{
+    margin: 1%;
+    padding: 0 2%;
+    color: #020381;
+    background: transparent;
+}
+#job-article{
+    margin: 0 2%;
+    height: 100%;
+}
+#job-article h3{
+    background: transparent;
+    margin: 3% 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#rside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-between;
+}
+#rside div{
+    margin: 0 0 10% 0;
+}
+#rside div img{
+    width: 100%;
+    margin: 2% 0;
+}
+#rside .flsm{
+    max-width: 80%;
+}
+#rside .flsm span{
+    width: 100%;
+    display: block;
+    margin: 5% 0;
+    min-height: 6vh;
+    padding: 1vh 0 0 1vh;
+    border-radius: 5px;
+}
+#rside .flsm span svg{
+    float: left;
+    background: transparent;
+}
+#rside .flsm span p{
+    background: transparent;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+#rside #youtube{
+    background: #FF0000;
+}
+#rside #whatsapp{
+    background: #25D366;
+}
+#rside #telegram{
+    background: #2AABEE;
+}
+#advlink{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+#rside #instagram{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+#rside span{
+    margin: 0 0 10%  0;
+}
+#rside span h1{
+    margin: 2% 0;
+    padding: 2% 5%;
+    font-family: 'Lato', sans-serif;
+    background: #0B2447;
+    color: #ffffff;
+}
+#rside span ul li{
+    line-height: 2;
+    background: aliceblue;
+    padding: 2% 5%;
+    list-style: none;
+}
+#rside span ul li a{
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    color: #000000;
+}
+p[id="ad"]{
+    color: #808080;
+    font-size: 0.7rem;
+}
+#add{
+    width: 100%;
+    min-height: 30vh;
+    background-color: #fff;
+    background: lightgray;
+}
+footer{
+    /* background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% ); */
+    background: #1e272e;
+    width: 100%;
+    display: flex;
+    align-items: space-around;
+    flex-wrap: wrap;
+    padding: 2% 2%;
+    color: #ffffff;
+}
+footer div{
+    margin: 0 2%;
+    min-width: 20%;
+}
+footer .foot-fig{
+    max-width: 200px;
+    background: transparent;
+}
+footer .footm ul li{
+    list-style: none;
+    font-size: 0.9em;
+    color: #fffFFFB8;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+footer .footm ul li a{
+    color: #fffFFFB8;
+}
+footer div, footer h2, footer ul, footer ul li, footer span, footer svg{
+    background: transparent;
+}
+.footl p, .footm p, .footr ul li p{
+    display: inline-block;
+    background: transparent;
+    font-size: 0.9em;
+    color: #fffFFFB8;
+    font-weight: bold;
+}
+.footl h2,.footm h2,.footr h2{
+    font-family: 'Open Sans', sans-serif;
+    margin: 10% 0 0 0;
+}
+#advlink{
+    color: #fffFFFB8;
+    font-weight: bold;
+    
+}
+.footl span{
+    display: block;
+    width: 100%;
+    margin: 5% 0;
+}
+footer .footl svg{
+    float: left;
+    fill: #ffffff;
+    margin: 0 5% 0 0; 
+}
+.footr svg{
+    margin: 0% 5% 0 0;
+    background: transparent;
+}
+.footcopy hr{
+    color: #fffFFFB8;
+    height: 1px;
+    border-width: 0;
+    background-color: #fffFFFB8;
+}
+.footcopy, strong{
+    all:unset;
+    width: 100%;
+    text-align: center;
+    margin: 1% 0 0% 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background: transparent;
+    color: #fffFFFB8;
+}
+form, form>*{
+    background: transparent;
+}
+fieldset{
+    border: 1px solid #808080;
+    background: transparent;
+    border-radius: 5px;
+    padding: 2%;
+    width: 100%;
+}
+fieldset legend{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    background: transparent;
+}
+fieldset label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    background: transparent;
+}
+fieldset input{
+    width: 30vw;
+    height: 8vh;
+    border: none;
+    margin: 1% 0;
+    padding: 0 2%;
+}
+fieldset textarea{
+    border: none;
+    margin: 2% 0;
+    width: 80%;
+    height: 20vh;
+    padding: 0 2%;
+}
+fieldset button{
+    padding: 1% 2%;
+    background: #0B2447;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+}
+#resume-sec #res-type{
+    border: 1px solid #0B2447;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 2%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    width: 100%;
+}
+#resume-sec #res-type a {
+    margin: 2%;
+}
+#resume-sec #res-type a figure{
+    border: 1px solid #808080;
+    min-width: 20vw;
+    max-width: 30vw;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#resume-sec #res-type figure img{
+    width: 100%;
+    height: 93%;
+}
+#resume-sec #res-type figure figcaption{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    background: url(../images/14649409_SL_043021_42650_12.jpg);
+}
+.ad-art{
+    background: url(../images/3428144_60241.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ad-art .job-div div ul,.ad-art .job-div div ul li, .ad-art .job-div div p, .ad-art .job-div div h3, .ad-art h1{
+    background: transparent !important;
+}
+#job-ap-div ul li, #job-ap-div p{
+    line-height: 2;
+}
+.ad-art .job-div div #adnote{
+    color: #ff0000;
+}
+.cmsn{
+    background: url(../images/comingsoon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#nofound{
+    display: none;
+    color: #ff0000;
+    font-size: 10rem;
+    width: 100%;
+}
