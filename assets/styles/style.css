@@ -529,7 +529,7 @@ article #date{
     display: block;
     margin: 5% 0;
     min-height: 6vh;
-    padding: 1vh 0 0 1vh;
+    padding: 10px 10px;
     border-radius: 5px;
 }
 #rside .flsm span svg{
@@ -544,8 +544,6 @@ article #date{
 }
 #rside #youtube{
     background: #FF0000;
-    min-height: 30px;
-    max-height: 50px;
 }
 #rside #whatsapp{
     background: #25D366;
