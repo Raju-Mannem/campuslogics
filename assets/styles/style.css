@@ -528,7 +528,6 @@ article #date{
     width: 100%;
     display: block;
     margin: 5% 0;
-    min-height: 6vh;
     padding: 10px 10px;
     border-radius: 5px;
 }
