@@ -477,13 +477,13 @@ article #date{
 }
 #job-sec ul li,#job-sec p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 1.6;
     background: #ffffff;
 }
-#job-sec ul li{
+/* #job-sec ul li{
     margin: 25px;
-}
+} */
 #job-sec .job-div a{
     font-family: 'Montserrat', sans-serif;
     margin: 2%;
