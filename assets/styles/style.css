@@ -596,7 +596,7 @@ footer{
     display: flex;
     align-items: space-around;
     flex-wrap: wrap;
-    padding: 10vh 10px 0 0;
+    padding: 5vh 10px 0 0;
     color: #ffffff;
 }
 footer div{
