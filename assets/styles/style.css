@@ -534,7 +534,6 @@ article #date{
 #rside .flsm span svg{
     float: left;
     background: transparent;
-    position: relative;
     max-height: 80%;
 }
 #rside .flsm span p{
