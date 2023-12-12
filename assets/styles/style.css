@@ -534,8 +534,6 @@ article #date{
 #rside .flsm span svg{
     float: left;
     background: transparent;
-/*     max-height: 80%; */
-    object:fit-content;
 }
 #rside .flsm span p{
     background: transparent;
@@ -598,7 +596,7 @@ footer{
     display: flex;
     align-items: space-around;
     flex-wrap: wrap;
-    padding: 2% 2%;
+    padding: 5% 2% 0 0;
     color: #ffffff;
 }
 footer div{
