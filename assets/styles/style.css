@@ -481,9 +481,9 @@ article #date{
     line-height: 1.6;
     background: #ffffff;
 }
-/* #job-sec ul li{
-    margin: 25px;
-} */
+#job-sec ul li{
+    margin: 25px 0;
+}
 #job-sec .job-div a{
     font-family: 'Montserrat', sans-serif;
     margin: 2%;
