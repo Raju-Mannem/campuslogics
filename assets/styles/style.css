@@ -535,7 +535,7 @@ article #date{
     float: left;
     background: transparent;
     position: relative;
-    max-height: 80px;
+    max-height: 80%;
 }
 #rside .flsm span p{
     background: transparent;
