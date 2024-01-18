@@ -564,6 +564,18 @@ article #date{
     background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
     opacity: 0.7;
 }
+#rside #youtube:hover{
+    opacity: 1;
+}
+#rside #whatsapp:hover{
+    opacity: 1;
+}
+#rside #telegram:hover{
+    opacity: 1;
+}
+#rside #instagram:hover{
+    opacity: 1;
+}
 #rside span{
     margin: 0 0 10%  0;
 }
