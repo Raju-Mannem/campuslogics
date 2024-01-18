@@ -543,12 +543,17 @@ article #date{
 }
 #rside #youtube{
     background: #FF0000;
+    opacity: 0.7;
 }
 #rside #whatsapp{
     background: #25D366;
+    opacity: 0.7;
+
 }
 #rside #telegram{
     background: #2AABEE;
+    opacity: 0.7;
+
 }
 #advlink{
     text-decoration: underline;
@@ -557,6 +562,7 @@ article #date{
 }
 #rside #instagram{
     background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    opacity: 0.7;
 }
 #rside span{
     margin: 0 0 10%  0;
@@ -772,4 +778,97 @@ fieldset button{
     color: #ff0000;
     font-size: 10rem;
     width: 100%;
+}
+.qzhead-hr{
+    margin: 5px 0;
+}
+.qzhead{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    color: #fff;
+    border: 1px dotted #0B2447;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 0 10px 0 10px;
+    background: #133e7a;
+}
+.quest{
+    background-color: transparent;
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin: 0 0 15px 10px;
+}
+.qs-div{
+    padding: 20px 0;
+    border-bottom: 1px solid #808080;
+}
+.ch-div{
+    background-color: transparent;
+}
+.ch-div .opt{
+    display: block;
+    background: transparent;
+    text-align: left;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 0.9rem;
+    width: 90%;
+    border-radius: 5px;
+}
+.ch-div span{
+    border: 1px solid gray;
+    background: transparent;
+    margin: 0 10px;
+    padding: 0 8px;
+    border-radius: 50%;
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 0.9rem;
+}
+.submit{
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 1.2rem; */
+    color: #fff;
+    background-color: #405de6;
+    float: center;
+    margin: 30px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+.res{
+    display: none;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px dotted #0B2447;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.you-scored{
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    background-color: #213555;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+.res span{
+    display: block;
+    padding: 0 10px;
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+.res span:nth-child(1){
+    border-bottom: 1px dotted black;
 }
