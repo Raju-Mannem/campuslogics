@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B2447">
+    <meta name="msapplication-navbutton-color" content="#0B2447">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0B2447">
+    <meta property="og:title" content="Online tests for competitive examinations, entrance examinations, and recruitment interviews." />
+    <meta property="og:description" content="Important Questions and Answers." />
+    <meta property="og:url" content=https://campuslogics.netlify.app/"" />
+    <meta property="og:image" content="https://campuslogics.netlify.app/assets/images/quiz/online-test.jpg" />
+    <meta property="og:image" itemprop="image" content="https://campuslogics.netlify.app/assets/images/quiz/online-test.jpg"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="100"/>
+    <meta property="og:image:height" content="100"/>
+    <link rel="icon" type="image/png" href="https://campuslogics.netlify.app/assets/images/campus-logics-sm.jpeg" />
+    <title>Online tests for competitive examinations,</title>
+    <meta name="description" content="Grand Test for competitive examinations, entrance examinations, and recruitment interviews"> 
+    <meta name="keywords" content="Online tests for competitive examinations, entrance examinations, and recruitment interviews">
+    <link href="../assets/styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Noto+Sans:wght@700&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div>
+            <img class="figure" src="../assets/images/campus-logics-high-resolution-logo-transparent.png" alt="logo" title="logo" />
+        </div>
+        <div class="shdiv">
+            <label for="sh-input"></label>
+            <input type="search"  placeholder="search" id="sh-input" oninput="filterCards()"  sh-input/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon ionicon" viewBox="0 0 512 512"><path d="M464 428L339.92 303.9a160.48 160.48 0 0030.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0094.58-30.72L428 464zM209.32 319.69a110.38 110.38 0 11110.37-110.37 110.5 110.5 0 01-110.37 110.37z"/></svg>
+        </div>
+        <div class="addbtn">
+           <a href="../advertise.html">Adverstise With Us</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="hideOnMobile"><a href="../index.html">home</a></li>
+            <li class="hideOnMobile"><a href="../internships.html">internships</a></li>
+            <li class="hideOnMobile"><a href="../scholarships.html">scholarships</a></li>
+            <li class="hideOnMobile"><a href="../courses.html">courses</a></li>
+            <li class="hideOnMobile"><a href="../admissions.html">admissions</a></li>
+            <li class="hideOnMobile"><a href="#footm">resources</a></li>
+            <li class="hideOnMobile"><a href="../contact.html">contact us</a></li>
+            <li class="mobile-logo"><img class="figure" src="../assets/images/campus-logics-high-resolution-logo-transparent.png" alt="logo" title="logo" /></li>
+            <li onclick="showSearchbar()"><svg xmlns="http://www.w3.org/2000/svg" class="mobile-search-icon ionicon" viewBox="0 0 512 512" fill="#0B2447"><path d="M464 428L339.92 303.9a160.48 160.48 0 0030.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0094.58-30.72L428 464zM209.32 319.69a110.38 110.38 0 11110.37-110.37 110.5 110.5 0 01-110.37 110.37z"/></svg>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../internships.html">internships</a></li>
+            <li><a href="../scholarships.html">scholarships</a></li>
+            <li><a href="../courses.html">courses</a></li>
+            <li><a href="../admissions.html">admissions</a></li>
+            <li><a href=".#footm">resources</a></li>
+            <li><a href="../contact.html">contact us</a></li>
+        </ul>
+    </nav>
+     <div id="mobile-searchbar" style="display:none">
+        <label for="mobile-sh-input"></label>
+        <input type="search"  placeholder="search" id="mobile-sh-input" oninput="mobileFilterCards()" mobile-input >
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M464 428L339.92 303.9a160.48 160.48 0 0030.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0094.58-30.72L428 464zM209.32 319.69a110.38 110.38 0 11110.37-110.37 110.5 110.5 0 01-110.37 110.37z"/></svg>
+    </div>
+    <main>
+            <section id="intern-sec">
+                <article class="qsart">
+                    <hr class="qzhead-hr"/>
+                    <p class="qzhead" id="grand-test"> Grand Test 1 📚 📝✏️  </p>
+                    <hr class="qzhead-hr"/>
+                    <div class="qs-div">
+                    <p class="quest">1) &nbsp;'ప్రపంచ సునామీ అవేర్‌నెస్ డే' పాటించాలని మొదట ఏ దేశం సూచించింది?</p>
+                    <div class="ch-div">
+                        <button class="opt q1o" id="opt11"><span>A</span>&nbsp;&nbsp;ఇండోనేషియా</button>
+                        <button class="opt q1o" id="opt12"><span>B</span>&nbsp;&nbsp;ఇండియా</button>
+                        <button class="opt q1o" id="opt13"><span>C</span>&nbsp;&nbsp;ఫిలిప్పీన్స్</button>
+                        <button class="opt q1o" id="opt14"><span>D</span>&nbsp;&nbsp;జపాన్</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">2) &nbsp;వరల్డ్ ట్రావెల్ మార్కెట్‌ను ఏ నగరం నిర్వహిస్తోంది?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt21"><span>A</span>&nbsp;&nbsp;రోమ్</button>
+                        <button class="opt" id="opt22"><span>B</span>&nbsp;&nbsp;లండన్</button>
+                        <button class="opt" id="opt23"><span>C</span>&nbsp;&nbsp;టెల్ అవీవ్</button>
+                        <button class="opt" id="opt24"><span>D</span>&nbsp;&nbsp;పారిస్</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">3) &nbsp;ఇండియన్ ఎయిర్ ఫోర్స్ (IAF) మరియు రిపబ్లిక్ ఆఫ్ సింగపూర్ ఎయిర్ ఫోర్స్
+                        (RSAF) మధ్య వార్షిక ఉమ్మడి సైనిక శిక్షణ ఎక్కడ ప్రారంభమైంది?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt31"><span>A</span>&nbsp;&nbsp;గోవా</button>
+                        <button class="opt" id="opt32"><span>B</span>&nbsp;&nbsp;మహారాష్ట్ర</button>
+                        <button class="opt" id="opt33"><span>C</span>&nbsp;&nbsp;పశ్చిమ బెంగాల్</button>
+                        <button class="opt" id="opt34"><span>D</span>&nbsp;&nbsp;అస్సాం</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">4) &nbsp;2022-23 ఆర్థిక సంవత్సరంలో రష్యా ఏ దేశానికి 'పిగ్ ఐరన్' యొక్క అతిపెద్ద
+                        దిగుమతిదారుగా అవతరించింది?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt41"><span>A</span>&nbsp;&nbsp;రష్యా</button>
+                        <button class="opt" id="opt42"><span>B</span>&nbsp;&nbsp;ఇండియా</button>
+                        <button class="opt" id="opt43"><span>C</span>&nbsp;&nbsp;జపాన్</button>
+                        <button class="opt" id="opt44"><span>D</span>&nbsp;&nbsp;పాకిస్తాన్</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">5) &nbsp;ఏ దేశం తన మొదటి అణు విద్యుత్ ప్లాంట్‌ను నిర్మించడానికి USAతో
+                        భాగస్వామ్యం కలిగి ఉంది?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt51"><span>A</span>&nbsp;&nbsp;అల్బేనియా</button>
+                        <button class="opt" id="opt52"><span>B</span>&nbsp;&nbsp;పోలాండ్</button>
+                        <button class="opt" id="opt53"><span>C</span>&nbsp;&nbsp;అల్జీరియా</button>
+                        <button class="opt" id="opt54"><span>D</span>&nbsp;&nbsp;ఆఫ్ఘనిస్తాన్</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">6) &nbsp;ప్రధాన మంత్రి నరేంద్ర మోదీ విజయాలు మరియు వారసత్వంపై రాసిన రెండు
+                        పుస్తకాలు ఎక్కడ విడుదలయ్యాయి?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt61"><span>A</span>&nbsp;&nbsp;దుబాయ్</button>
+                        <button class="opt" id="opt62"><span>B</span>&nbsp;&nbsp;అల్బేనియా</button>
+                        <button class="opt" id="opt63"><span>C</span>&nbsp;&nbsp;అల్జీరియా</button>
+                        <button class="opt" id="opt64"><span>D</span>&nbsp;&nbsp;అర్జెంటీనా</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">7) &nbsp;"విన్నింగ్ ది ఇన్నర్ బ్యాటిల్" పుస్తక రచయిత ఎవరు?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt71"><span>A</span>&nbsp;&nbsp;శశి థరూర్</button>
+                        <button class="opt" id="opt72"><span>B</span>&nbsp;&nbsp;షేన్ వాట్సన్</button>
+                        <button class="opt" id="opt73"><span>C</span>&nbsp;&nbsp;సల్మాన్ రష్దీ</button>
+                        <button class="opt" id="opt74"><span>D</span>&nbsp;&nbsp;అరుంధతీ రాయ్</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">8) &nbsp;53వ ఇంటర్నేషనల్ ఫిల్మ్ ఫెస్టివల్ ఆఫ్ ఇండియా (IFFI)ని ఏ చిత్రం
+                        ప్రారంభించనుంది?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt81"><span>A</span>&nbsp;&nbsp;మెడిటరేనియన్ జ్వరం</button>
+                        <button class="opt" id="opt82"><span>B</span>&nbsp;&nbsp;కథకుడు</button>
+                        <button class="opt" id="opt83"><span>C</span>&nbsp;&nbsp;అల్మా మరియు ఆస్కార్</button>
+                        <button class="opt" id="opt84"><span>D</span>&nbsp;&nbsp;కాశ్మీర్ ఫైల్స్</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">9) &nbsp;ICC హాల్ ఆఫ్ ఫేమ్ 2022లో ఎవరు చేర్చబడ్డారు?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt91"><span>A</span>&nbsp;&nbsp;రిడ్లీ జాకబ్స్</button>
+                        <button class="opt" id="opt92"><span>B</span>&nbsp;&nbsp;రాంనరేష్ సర్వన్</button>
+                        <button class="opt" id="opt93"><span>C</span>&nbsp;&nbsp;శివనారాయణ్ చంద్రపాల్</button>
+                        <button class="opt" id="opt94"><span>D</span>&nbsp;&nbsp;డారెన్ గంగ</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">10) &nbsp;ఫోర్బ్స్ వరల్డ్ బెస్ట్ ఎంప్లాయర్స్ ర్యాంకింగ్స్ 2022లో టాప్ 100లో ర్యాంక్
+                        సాధించిన ఏకైక భారతీయ కంపెనీ ఏది?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt101"><span>A</span>&nbsp;&nbsp;టాటా కన్సల్టెన్సీ సర్వీసెస్</button>
+                        <button class="opt" id="opt102"><span>B</span>&nbsp;&nbsp;అదానీ గ్రూప్</button>
+                        <button class="opt" id="opt103"><span>C</span>&nbsp;&nbsp;ఇన్ఫోసిస్</button>
+                        <button class="opt" id="opt104"><span>D</span>&nbsp;&nbsp;రిలయన్స్ ఇండస్ట్రీస్</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">11) &nbsp;01 - 05 నవంబర్ 2022 వరకు జరుపుకునే ఇండియా వాటర్ వీక్ 2022 థీమ్
+                        ఏమిటి?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt111"><span>A</span>&nbsp;&nbsp;నీరు, శక్తి మరియు ఆహార భద్రత</button>
+                        <button class="opt" id="opt112"><span>B</span>&nbsp;&nbsp;ఎవరినీ వదలకుండా</button>
+                        <button class="opt" id="opt113"><span>C</span>&nbsp;&nbsp;భూగర్భ జలాలు, కనిపించని వాటిని కనిపించేలా చేయడం</button>
+                        <button class="opt" id="opt114"><span>D</span>&nbsp;&nbsp;సస్టైనబుల్ డెవలప్‌మెంట్ మరియు ఈక్విటీ కోసం నీటి భద్రత</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">12) &nbsp;ప్రపంచ సునామీ అవగాహన దినోత్సవాన్ని ఏ తేదీన నిర్వ‌హిస్తారు?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt121"><span>A</span>&nbsp;&nbsp;నవంబర్ 05</button>
+                        <button class="opt" id="opt122"><span>B</span>&nbsp;&nbsp;నవంబర్ 03</button>
+                        <button class="opt" id="opt123"><span>C</span>&nbsp;&nbsp;నవంబర్ 02</button>
+                        <button class="opt" id="opt124"><span>D</span>&nbsp;&nbsp;నవంబర్ 04</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">13) &nbsp;ప్రపంచ సునామీ అవేర్‌నెస్ డే 2022 థీమ్ ఏమిటి?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt131"><span>A</span>&nbsp;&nbsp;ఆర్థిక నష్టాలను తగ్గించడం</button>
+                        <button class="opt" id="opt132"><span>B</span>&nbsp;&nbsp;ప్రతి సునామీకి ముందు ముందస్తు హెచ్చరిక మరియు ముందస్తు చర్య</button>
+                        <button class="opt" id="opt133"><span>C</span>&nbsp;&nbsp;బాధిత వ్యక్తుల సంఖ్యను తగ్గించండి</button>
+                        <button class="opt" id="opt134"><span>D</span>&nbsp;&nbsp;గెట్‌టోహైగ్రౌండ్</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">14) &nbsp;జాతీయ క్యాన్సర్ అవగాహన దినోత్సవాన్ని ఎప్పుడు నిర్వహిస్తారు?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt141"><span>A</span>&nbsp;&nbsp;నవంబర్ 02</button>
+                        <button class="opt" id="opt142"><span>B</span>&nbsp;&nbsp;నవంబర్ 10</button>
+                        <button class="opt" id="opt143"><span>C</span>&nbsp;&nbsp;నవంబర్ 07</button>
+                        <button class="opt" id="opt144"><span>D</span>&nbsp;&nbsp;నవంబర్ 05</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">15) &nbsp;జాతీయ న్యాయ సేవల దినోత్సవాన్ని ఏ తేదీన పాటిస్తారు?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt151"><span>A</span>&nbsp;&nbsp;నవంబర్ 09</button>
+                        <button class="opt" id="opt152"><span>B</span>&nbsp;&nbsp;నవంబర్ 05</button>
+                        <button class="opt" id="opt153"><span>C</span>&nbsp;&nbsp;నవంబర్ 12</button>
+                        <button class="opt" id="opt154"><span>D</span>&nbsp;&nbsp;నవంబర్ 14</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">16) &nbsp;మహాప్రస్థానం గ్రంథ రచయిత?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt161"><span>A</span>&nbsp;&nbsp;ఆదిభట్ల కైలాసం</button>
+                        <button class="opt" id="opt162"><span>B</span>&nbsp;&nbsp;సుబ్బారావు పాణిగ్రహి</button>
+                        <button class="opt" id="opt163"><span>C</span>&nbsp;&nbsp;శ్రీ శ్రీ</button>
+                        <button class="opt" id="opt164"><span>D</span>&nbsp;&nbsp;విద్వాన్ విశ్వం</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">17) &nbsp;విజ్ఙానం చంద్రికామండలి ఎక్కడ స్థాపించబడింది?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt171"><span>A</span>&nbsp;&nbsp;విజయవాడ</button>
+                        <button class="opt" id="opt172"><span>B</span>&nbsp;&nbsp;హనుమకొండ</button>
+                        <button class="opt" id="opt173"><span>C</span>&nbsp;&nbsp;వరంగల్లు</button>
+                        <button class="opt" id="opt174"><span>D</span>&nbsp;&nbsp;హైదరాబాద్</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">18) &nbsp;ఆంద్రప్రదేశ్ కు మొట్టమొదటి ముఖ్యమంత్రి మరియు గవర్నర్ ఎవరు?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt181"><span>A</span>&nbsp;&nbsp;బెజవాడ గోపాలరెడ్డి - త్రివేది</button>
+                        <button class="opt" id="opt182"><span>B</span>&nbsp;&nbsp;టంగుటూరి ప్రకాశం పంతులు - త్రివేది</button>
+                        <button class="opt" id="opt183"><span>C</span>&nbsp;&nbsp;నీలం సంజీవరెడ్డి - త్రివేది</button>
+                        <button class="opt" id="opt184"><span>D</span>&nbsp;&nbsp;ఎన్. జి. రంగా - త్రివేది</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">19) &nbsp;అటవీ రికార్డుల ప్రకారం ఆంద్రప్రదేశ్ లో అడవుల విస్తీర్ణం</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt191"><span>A</span>&nbsp;&nbsp;36, 700 చ. కి. మీ</button>
+                        <button class="opt" id="opt192"><span>B</span>&nbsp;&nbsp;37, 707 చ. కి. మీ</button>
+                        <button class="opt" id="opt193"><span>C</span>&nbsp;&nbsp;37, 007 చ. కి. మీ</button>
+                        <button class="opt" id="opt194"><span>D</span>&nbsp;&nbsp;36, 707 చ. కి. మీ</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">20) &nbsp;రాష్ట్ర భౌగోళిక విస్తీర్ణం లో 23.54% అడవులను కలిగిన ఆంద్రప్రదేశ్ అతిపెద్ద
+                        అటవీ విస్తీర్ణం కలిగిన రాష్ట్రాలలో ఎన్నోవ స్థానం లో ఉంది?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt201"><span>A</span>&nbsp;&nbsp;9వ స్థానం</button>
+                        <button class="opt" id="opt202"><span>B</span>&nbsp;&nbsp;10వ స్థానం</button>
+                        <button class="opt" id="opt203"><span>C</span>&nbsp;&nbsp;6వ స్థానం</button>
+                        <button class="opt" id="opt204"><span>D</span>&nbsp;&nbsp;8వ స్థానం</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">21) &nbsp;దేశ జనాభాలో 4.10% జనాభా గల AP ఎక్కువ జనాభా గల రాష్ట్రాలలో ఏ
+                        స్థానం లో ఉంది?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt211"><span>A</span>&nbsp;&nbsp;8వ స్థానం</button>
+                        <button class="opt" id="opt212"><span>B</span>&nbsp;&nbsp;9వ స్థానం</button>
+                        <button class="opt" id="opt213"><span>C</span>&nbsp;&nbsp;10వ స్థానం</button>
+                        <button class="opt" id="opt214"><span>D</span>&nbsp;&nbsp;11వ స్థానం</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">22) &nbsp;2001 - 11 మధ్య దేశం లో జనాభా వృద్ధిరేటు 17.7% కాగా, ఆంద్రప్రదేశ్
+                        జనాభా వృద్ధిరేటు?</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt221"><span>A</span>&nbsp;&nbsp;9.51%</button>
+                        <button class="opt" id="opt222"><span>B</span>&nbsp;&nbsp;9.10%</button>
+                        <button class="opt" id="opt223"><span>C</span>&nbsp;&nbsp;9.21%</button>
+                        <button class="opt" id="opt224"><span>D</span>&nbsp;&nbsp;9.32%</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">23) &nbsp;2011 జనాభా లెక్కల ప్రకారం ఆంద్రప్రదేశ్ రాష్ట్రం లో చదరపు కిలో మీటరుకు
+                        నివసించే జనసాంద్రత</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt231"><span>A</span>&nbsp;&nbsp;308 మంది</button>
+                        <button class="opt" id="opt232"><span>B</span>&nbsp;&nbsp;304 మంది</button>
+                        <button class="opt" id="opt233"><span>C</span>&nbsp;&nbsp;328 మంది</button>
+                        <button class="opt" id="opt234"><span>D</span>&nbsp;&nbsp;382 మంది</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">24) &nbsp;2001 - 2011 మధ్య కాలంలో AP లింగ నిష్పత్తి కి సంబంధించి సరైనది?<br>
+                        <br>ఎ) 2001 - 2011 మధ్య లింగ నిష్పత్తి పెరిగింది<br>
+                        <br>బి) AP లింగ నిష్పత్తి భారతదేశం లో ని లింగ నిష్పత్తి కంటే ఎక్కువ<br>
+                        <br>సి) 2011 జనాభా లెక్కల ప్రకారం AP లింగ నిష్పత్తి 997
+                    </p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt241"><span>A</span>&nbsp;&nbsp;ఎ, బి & సి లు సరైనవి</button>
+                        <button class="opt" id="opt242"><span>B</span>&nbsp;&nbsp;బి & సి మాత్రమే లు సరైనవి</button>
+                        <button class="opt" id="opt243"><span>C</span>&nbsp;&nbsp;ఎ & బి లు సరైనవి</button>
+                        <button class="opt" id="opt244"><span>D</span>&nbsp;&nbsp;ఎ & సి లు సరైనవి</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">25) &nbsp;2011 లో దేశ అక్షరాస్యత 72.98% కాగా, ఆంద్రప్రదేశ్ లో అక్షరాస్యత</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt251"><span>A</span>&nbsp;&nbsp;66.75%</button>
+                        <button class="opt" id="opt252"><span>B</span>&nbsp;&nbsp;67.60%</button>
+                        <button class="opt" id="opt253"><span>C</span>&nbsp;&nbsp;62.07%</button>
+                        <button class="opt" id="opt254"><span>D</span>&nbsp;&nbsp;67.35%</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">26) &nbsp;1981 - 2011 మధ్య కాలంలో AP లో అక్ష రాస్యత ఎన్ని పాయింట్లు పెరిగినవి</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt261"><span>A</span>&nbsp;&nbsp;35%</button>
+                        <button class="opt" id="opt262"><span>B</span>&nbsp;&nbsp;37%</button>
+                        <button class="opt" id="opt263"><span>C</span>&nbsp;&nbsp;42%</button>
+                        <button class="opt" id="opt264"><span>D</span>&nbsp;&nbsp;25%</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">27) &nbsp;AP లో 2011 జనాభా లెక్కల ప్రకారం పట్టణీకరణ/పట్టణ జనాభా శాతము</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt271"><span>A</span>&nbsp;&nbsp;31.16%</button>
+                        <button class="opt" id="opt272"><span>B</span>&nbsp;&nbsp;27.75%</button>
+                        <button class="opt" id="opt273"><span>C</span>&nbsp;&nbsp;29.47%</button>
+                        <button class="opt" id="opt274"><span>D</span>&nbsp;&nbsp;28.50%</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">28) &nbsp;రాష్ట్ర భౌగోళిక విస్తీర్ణం లో నికర సాగు భూమి శాతం</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt281"><span>A</span>&nbsp;&nbsp;37.08%</button>
+                        <button class="opt" id="opt282"><span>B</span>&nbsp;&nbsp;39.06%</button>
+                        <button class="opt" id="opt283"><span>C</span>&nbsp;&nbsp;36.07%</button>
+                        <button class="opt" id="opt284"><span>D</span>&nbsp;&nbsp;43.05%</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">29) &nbsp;2018 - 19 ముందస్తు అంచనాల ( AE ) ప్రకారం రాష్ట్ర GSDP ప్రస్తుత
+                        ధరలలో 9,33,402 కోట్లు కాగా , స్థిర ధరలలో</p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt291"><span>A</span>&nbsp;&nbsp;8,09,500 కోట్లు</button>
+                        <button class="opt" id="opt292"><span>B</span>&nbsp;&nbsp;6,12,800 కోట్లు</button>
+                        <button class="opt" id="opt293"><span>C</span>&nbsp;&nbsp;7,08,400 కోట్లు</button>
+                        <button class="opt" id="opt294"><span>D</span>&nbsp;&nbsp;6,80,332 కోట్లు</button>
+                    </div>
+                </div>
+                <div class="qs-div">
+                    <p class="quest">30) &nbsp;క్రింది వానిలో సరైనది గుర్తించండి. <br>
+                        <br>ఎ) ముందు సంవత్సరంతో పోలిస్తే 2018 - 19 సంవత్సరం లో రాష్ట్ర వృద్ధిరేటు
+                        11.02% <br>
+                        <br>బి) 2018 - 19 లో దేశ GDP వృద్ధిరేటు, రాష్ట్ర GSDP వృద్ధిరేటు కంటే
+                        ఎక్కువగా నమోదయింది. <br>
+                        <br>సి) 2018 - 19 ముందస్తు అంచనాలు (AE ) ప్రకారం రాష్ట్ర GSDP స్థిర
+                        ధరలలో 6,80,332 కోట్లు
+                    </p>
+                    <div class="ch-div">
+                        <button class="opt" id="opt301"><span>A</span>&nbsp;&nbsp;ఎ, బి లు సరైనవి</button>
+                        <button class="opt" id="opt302"><span>B</span>&nbsp;&nbsp;ఎ, సి లు సరైనవి</button>
+                        <button class="opt" id="opt303"><span>C</span>&nbsp;&nbsp;ఎ, బి, సి లు సరైనవి</button>
+                        <button class="opt" id="opt304"><span>D</span>&nbsp;&nbsp;ఎ మాత్రమే సరైనవి</button>
+                    </div>
+                </div>
+                <p class="you-scored">you scored</p>
+                <button class="res"><span id="result"></span><span>30</span></button>
+                <button class="submit" onclick="result()">SUBMIT</button>
+                
+                </article>
+            </section>
+            <aside>
+                <div id="rside">
+                    <div class="flsm">
+                        <img src="../assets/images/follow-us-on-high-resolution-logo-black-transparent.png" alt="Follow Us" />
+                        <a id="sm-yt"><span id="youtube"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="26px"><path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"/><path fill="#FFF" d="M20 31L20 17 32 24z"/></svg><p>Youtube</p></span></a>
+                        <a id="sm-wh"><span id="whatsapp"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="26px" clip-rule="evenodd"><path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"/><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"/><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"/><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"/><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"/></svg><p>Whatsapp</p></span></a>
+                        <a id="sm-te"><span id="telegram"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="26px"><path fill="#29b6f6" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"/><path fill="#fff" d="M33.95,15l-3.746,19.126c0,0-0.161,0.874-1.245,0.874c-0.576,0-0.873-0.274-0.873-0.274l-8.114-6.733 l-3.97-2.001l-5.095-1.355c0,0-0.907-0.262-0.907-1.012c0-0.625,0.933-0.923,0.933-0.923l21.316-8.468 c-0.001-0.001,0.651-0.235,1.126-0.234C33.667,14,34,14.125,34,14.5C34,14.75,33.95,15,33.95,15z"/><path fill="#b0bec5" d="M23,30.505l-3.426,3.374c0,0-0.149,0.115-0.348,0.12c-0.069,0.002-0.143-0.009-0.219-0.043 l0.964-5.965L23,30.505z"/><path fill="#cfd8dc" d="M29.897,18.196c-0.169-0.22-0.481-0.26-0.701-0.093L16,26c0,0,2.106,5.892,2.427,6.912 c0.322,1.021,0.58,1.045,0.58,1.045l0.964-5.965l9.832-9.096C30.023,18.729,30.064,18.416,29.897,18.196z"/></svg><p>Telegram</p></span></a>
+                        <a id="sm-in"><span id="instagram"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="26px"><radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"/><stop offset=".328" stop-color="#ff543f"/><stop offset=".348" stop-color="#fc5245"/><stop offset=".504" stop-color="#e64771"/><stop offset=".643" stop-color="#d53e91"/><stop offset=".761" stop-color="#cc39a4"/><stop offset=".841" stop-color="#c837ab"/></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"/><radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"/><stop offset=".999" stop-color="#4168c9" stop-opacity="0"/></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"/><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"/><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"/><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"/></svg><p>Instagram</p></span></a>
+                    </div>
+                    <span>
+                        <h1>Trending Jobs</h1>
+                        <ul>
+                            <li>
+                                <a id="tja1"><p id="tjp1"></p></a>
+                            </li>
+                            <li><hr/></li>
+                            <li>
+                                <a id="tja2"><p id="tjp2"></p></a>
+                             </li>
+                             <li><hr/></li>
+                             <li>
+                                <a id="tja3"><p id="tjp3"></p></a>
+                             </li>
+                             <li><hr/></li>
+                             <li>
+                                <a id="tja4"><p id="tjp4"></p></a>
+                             </li>
+                             <li><hr/></li>
+                             <li>
+                                <a id="tja5"><p id="tjp5"></p></a>
+                             </li>
+                             <li><hr/></li>
+                             <li>
+                                <a id="tja6"><p id="tjp6"></p></a>
+                             </li>
+                             <li><hr/></li> 
+                        </ul>
+                    </span>
+                    <p id="ad">Advertisement</p>
+                    <div id="add">
+                    </div>
+                </div>
+            </aside>
+    </main>
+    <footer>
+        <div class="footl">
+            <img class="foot-fig" src="../assets/images/campus-logics-high-resolution-logo-transparent.webp" alt="logo" title="logo" />
+            <h2>For Advertisement</h2>
+                <!-- <span><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg><p>+91 123456789</p></span> -->
+                <span><a href="mailto:campuslogics.in@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg><p>campuslogics.in@gmail.com</p></a></span>
+
+        </div>
+        <div class="footm">
+            <h2>Links</h2><br/>
+           <ul>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../privacypolicy.html">Privacy policy</a></li>
+                <li><a href="../termsandconditions.html">Terms & conditions</a></li>
+                <li><a href="../disclimar.html">Disclimar</a></li>
+           </ul>
+        </div>
+        <div class="footm" id="footm">
+            <h2>Resources</h2><br/>
+           <ul>
+                <li><a href="../resumes.html">Resumes</a></li>
+                <li><a href="../resumes.html">Cover Letters</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="../materials.html">Materials</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+           </ul>
+        </div>
+        <div class="footr">
+            <h2>Join with us</h2><br/>
+            <a href="https://www.youtube.com/@Campuslogics" id="sm-yt"><span id="youtube"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="26px" height="32px"><g fill-opacity="0" fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill-opacity="0.72157" fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(16,16)"><path d="M8,2c-2.03906,0 -3.84375,0.21094 -4.94141,0.375c-0.89844,0.13281 -1.61328,0.83594 -1.77734,1.73828c-0.14062,0.78906 -0.28125,1.94141 -0.28125,3.38672c0,1.44531 0.14063,2.59766 0.28125,3.38672c0.16406,0.90234 0.87891,1.60156 1.77734,1.73828c1.10156,0.16406 2.91406,0.375 4.94141,0.375c2.02734,0 3.83594,-0.21094 4.9375,-0.375h0.00391c0.89844,-0.13281 1.61328,-0.83594 1.77734,-1.73828c0.14063,-0.79297 0.28125,-1.94531 0.28125,-3.38672c0,-1.44531 -0.14062,-2.59766 -0.28516,-3.38672c-0.16016,-0.90234 -0.875,-1.60547 -1.77344,-1.73828c-1.09766,-0.16406 -2.90234,-0.375 -4.94141,-0.375zM8,3c1.96875,0 3.73047,0.20313 4.79297,0.36328c0.46875,0.07031 0.84766,0.4375 0.9375,0.92578c0.13281,0.73828 0.26953,1.83203 0.26953,3.21094c0,1.37891 -0.13672,2.47266 -0.26562,3.20703c-0.08984,0.49219 -0.46875,0.85938 -0.94141,0.92969c-1.07031,0.15625 -2.83594,0.36328 -4.79297,0.36328c-1.95703,0 -3.72656,-0.20703 -4.79297,-0.36328c-0.46875,-0.07031 -0.85156,-0.4375 -0.94141,-0.92969c-0.12891,-0.73828 -0.26562,-1.82812 -0.26562,-3.20703c0,-1.38281 0.13672,-2.47266 0.26563,-3.21094c0.08984,-0.48828 0.46875,-0.85547 0.9375,-0.92187h0.00391c1.0625,-0.16016 2.82422,-0.36719 4.79297,-0.36719zM6,5v5l5,-2.5z"></path></g></g></svg></span></a>
+            <a href="https://www.youtube.com/@Campuslogics" id="sm-yt"><span id="whatsapp"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="28px" height="32px"><g fill-opacity="1" fill="#fffFFFB8" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M24.50391,7.50391c-2.25781,-2.25781 -5.25781,-3.50391 -8.45312,-3.50391c-6.58594,0 -11.94922,5.35938 -11.94922,11.94531c-0.00391,2.10547 0.54688,4.16016 1.59375,5.97266l-1.69531,6.19141l6.33594,-1.66406c1.74219,0.95313 3.71094,1.45313 5.71094,1.45703h0.00391c6.58594,0 11.94531,-5.35937 11.94922,-11.94922c0,-3.19141 -1.24219,-6.19141 -3.49609,-8.44922zM16.05078,25.88281h-0.00391c-1.78125,0 -3.53125,-0.48047 -5.05469,-1.38281l-0.36328,-0.21484l-3.76172,0.98438l1.00391,-3.66406l-0.23437,-0.375c-0.99609,-1.58203 -1.51953,-3.41016 -1.51953,-5.28516c0,-5.47266 4.45703,-9.92578 9.9375,-9.92578c2.65234,0 5.14453,1.03516 7.01953,2.91016c1.875,1.87891 2.90625,4.37109 2.90625,7.02344c0,5.47656 -4.45703,9.92969 -9.92969,9.92969zM21.49609,18.44531c-0.29687,-0.14844 -1.76562,-0.87109 -2.03906,-0.96875c-0.27344,-0.10156 -0.47266,-0.14844 -0.67187,0.14844c-0.19922,0.30078 -0.76953,0.97266 -0.94531,1.17188c-0.17187,0.19531 -0.34766,0.22266 -0.64453,0.07422c-0.30078,-0.14844 -1.26172,-0.46484 -2.40234,-1.48437c-0.88672,-0.78906 -1.48828,-1.76953 -1.66016,-2.06641c-0.17578,-0.30078 -0.01953,-0.46094 0.12891,-0.60937c0.13672,-0.13281 0.30078,-0.34766 0.44922,-0.52344c0.14844,-0.17187 0.19922,-0.29687 0.30078,-0.49609c0.09766,-0.19922 0.04688,-0.375 -0.02734,-0.52344c-0.07422,-0.14844 -0.67187,-1.62109 -0.92187,-2.21875c-0.24219,-0.58203 -0.48828,-0.5 -0.67187,-0.51172c-0.17187,-0.00781 -0.37109,-0.00781 -0.57031,-0.00781c-0.19922,0 -0.52344,0.07422 -0.79687,0.375c-0.27344,0.29688 -1.04297,1.01953 -1.04297,2.48828c0,1.46875 1.07031,2.89063 1.21875,3.08984c0.14844,0.19531 2.10547,3.21094 5.10156,4.50391c0.71094,0.30859 1.26563,0.49219 1.69922,0.62891c0.71484,0.22656 1.36719,0.19531 1.88281,0.12109c0.57422,-0.08594 1.76563,-0.72266 2.01563,-1.42187c0.24609,-0.69531 0.24609,-1.29297 0.17188,-1.41797c-0.07422,-0.125 -0.27344,-0.19922 -0.57422,-0.35156z"></path></g></g></svg></span></a>
+            <a href="https://www.youtube.com/@Campuslogics" id="sm-yt"><span id="instagram"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="24px" height="30px"><g fill-opacity="1" fill="#fffFFFB8" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g></svg></span></a>
+            <a href="https://www.youtube.com/@Campuslogics" id="sm-yt"><span id="telegram"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="32px" height="30px"><g fill-opacity="0" fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill-opacity="0.72157" fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,8c-9.389,0 -17,7.611 -17,17c0,9.389 7.611,17 17,17c9.389,0 17,-7.611 17,-17c0,-9.389 -7.611,-17 -17,-17zM25,9c8.837,0 16,7.163 16,16c0,8.837 -7.163,16 -16,16c-8.837,0 -16,-7.163 -16,-16c0,-8.837 7.163,-16 16,-16zM31.98633,18.30664c-0.39234,-0.04537 -0.8843,0.06102 -1.43555,0.25977c-1.007,0.363 -13.87809,5.82853 -14.62109,6.14453c-0.705,0.3 -1.37205,0.62661 -1.37305,1.09961c0,0.332 0.19819,0.51889 0.74219,0.71289c0.566,0.202 1.99198,0.63519 2.83398,0.86719c0.811,0.224 1.73495,0.02803 2.25195,-0.29297c0.548,-0.341 6.87803,-4.57626 7.33203,-4.94727c0.454,-0.371 0.81436,0.10556 0.44336,0.47656c-0.372,0.372 -4.71606,4.58788 -5.28906,5.17188c-0.696,0.709 -0.20137,1.44428 0.26563,1.73828c0.533,0.336 4.36536,2.90536 4.94336,3.31836c0.578,0.412 1.16322,0.59961 1.69922,0.59961c0.536,0 0.81698,-0.70639 1.08398,-1.52539c0.313,-0.959 1.77898,-10.52225 1.95898,-12.40625c0.054,-0.57 -0.12552,-0.95014 -0.47852,-1.11914c-0.10675,-0.05125 -0.22664,-0.08253 -0.35742,-0.09766z"></path></g></g></svg></span></a>
+
+        </div>
+        <div class="footcopy"><hr/><br/><strong>Copyright 2023 CampusLogics - All rights reserved</strong></div>
+    </footer>
+    <script type="text/javascript" src="../assets/js/script.js"></script> 
+    </div>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none';
+        }
+        function showSearchbar(){
+            const searchbar = document.querySelector('#mobile-searchbar')
+            searchbar.style.display = 'block';
+            searchbar.style.margin = '5% 10%';
+        }
+var qa = [null,null,null,null,null,null,null,null,null,null,
+            null,null,null,null,null,null,null,null,null,null,
+            null,null,null,null,null,null,null,null,null,null,];
+
+var btncli=document.querySelectorAll(".opt");
+// console.log(btncli);
+for(var i=0;i<btncli.length;i++){
+document.querySelectorAll(".opt")[i].addEventListener("click",(e)=>{
+    var option = e.target.id;
+    // console.log(option);
+    applyColor(option);
+});
+}
+function applyColor(op){
+    switch (op){
+        case "opt11":
+        case "opt12":
+        case "opt13":
+        case "opt14":
+            ques1(0,op);
+            break;
+        case "opt21":
+        case "opt22":
+        case "opt23":
+        case "opt24":
+            ques1(1,op);
+            break;
+        case "opt31":
+        case "opt32":
+        case "opt33":
+        case "opt34":
+            ques1(2,op);
+            break;
+        case "opt41":
+        case "opt42":
+        case "opt43":
+        case "opt44":
+            ques1(3,op);
+            break;
+        case "opt51":
+        case "opt52":
+        case "opt53":
+        case "opt54":
+            ques1(4,op);
+            break;
+        case "opt61":
+        case "opt62":
+        case "opt63":
+        case "opt64":
+            ques1(5,op);
+            break;
+        case "opt71":
+        case "opt72":
+        case "opt73":
+        case "opt74":
+            ques1(6,op);
+            break;
+        case "opt81":
+        case "opt82":
+        case "opt83":
+        case "opt84":
+            ques1(7,op);
+            break;
+        case "opt91":
+        case "opt92":
+        case "opt93":
+        case "opt94":
+            ques1(8,op);
+            break;
+        case "opt101":
+        case "opt102":
+        case "opt103":
+        case "opt104":
+           ques1(9,op);
+            break;
+        case "opt111":
+        case "opt112":
+        case "opt113":
+        case "opt114":
+           ques1(10,op);
+            break;
+        case "opt121":
+        case "opt122":
+        case "opt123":
+        case "opt124":
+           ques1(11,op);
+            break;
+        case "opt131":
+        case "opt132":
+        case "opt133":
+        case "opt134":
+           ques1(12,op);
+            break;
+        case "opt141":
+        case "opt142":
+        case "opt143":
+        case "opt144":
+           ques1(13,op);
+            break;
+        case "opt151":
+        case "opt152":
+        case "opt153":
+        case "opt154":
+           ques1(14,op);
+            break;
+        case "opt161":
+        case "opt162":
+        case "opt163":
+        case "opt164":
+           ques1(15,op);
+            break;
+        case "opt171":
+        case "opt172":
+        case "opt173":
+        case "opt174":
+           ques1(16,op);
+            break;
+        case "opt181":
+        case "opt182":
+        case "opt183":
+        case "opt184":
+           ques1(17,op);
+            break;
+        case "opt191":
+        case "opt192":
+        case "opt193":
+        case "opt194":
+           ques1(18,op);
+            break;
+        case "opt201":
+        case "opt202":
+        case "opt203":
+        case "opt204":
+           ques1(19,op);
+            break;
+        case "opt211":
+        case "opt212":
+        case "opt213":
+        case "opt214":
+           ques1(20,op);
+            break;
+        case "opt221":
+        case "opt222":
+        case "opt223":
+        case "opt224":
+           ques1(21,op);
+            break;
+        case "opt231":
+        case "opt232":
+        case "opt233":
+        case "opt234":
+           ques1(22,op);
+            break;
+        case "opt241":
+        case "opt242":
+        case "opt243":
+        case "opt244":
+           ques1(23,op);
+            break;
+        case "opt251":
+        case "opt252":
+        case "opt253":
+        case "opt254":
+           ques1(24,op);
+            break;
+        case "opt261":
+        case "opt262":
+        case "opt263":
+        case "opt264":
+           ques1(25,op);
+            break;
+        case "opt271":
+        case "opt272":
+        case "opt273":
+        case "opt274":
+           ques1(26,op);
+            break;
+        case "opt281":
+        case "opt282":
+        case "opt283":
+        case "opt284":
+           ques1(27,op);
+            break;
+        case "opt291":
+        case "opt292":
+        case "opt293":
+        case "opt294":
+           ques1(28,op);
+            break;
+        case "opt301":
+        case "opt302":
+        case "opt303":
+        case "opt304":
+           ques1(29,op);
+            break;
+        default:
+            console.log(op)
+    }
+}
+function ques1(ques,op){
+    if(qa[ques]===null){
+        qa[ques]=op;
+        document.getElementById(op).style.background="rgb(233, 228, 228)";
+    }
+    else{
+        var current=qa[ques];
+        document.getElementById(current).style.background="transparent";
+        qa[ques]=op;
+        document.getElementById(qa[ques]).style.background="rgb(233, 228, 228)";
+    }
+}
+function result(){
+    let score=0;
+    var ans=["opt14","opt22","opt33","opt42","opt52","opt61","opt72","opt83","opt93","opt104",
+            "opt114","opt121","opt132","opt143","opt151","opt163","opt174","opt183","opt192","opt203",
+            "opt211","opt223","opt232","opt241","opt254","opt262","opt273","opt281","opt2914","opt302"];
+    for(let i=0;i<qa.length;i++){
+        if(qa[i]===ans[i]){
+            score++;
+            var cor=document.getElementById(qa[i]);
+            cor.style.backgroundColor="#DCFFB7";
+            cor.innerHTML+="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=all:unset>✅</span>";
+        }
+        else if(qa[i]!==null){
+            var cor=document.getElementById(ans[i]);
+            var wrong=document.getElementById(qa[i]);
+            cor.style.backgroundColor="#DCFFB7";        
+            wrong.style.backgroundColor="#FC6736";
+        }
+        else{
+            var cor=document.getElementById(ans[i]);
+            cor.style.backgroundColor="#DCFFB7";
+        }
+    }
+    document.getElementById("result").innerHTML=score;
+    document.querySelector(".res").style.display="block";
+    document.querySelector(".you-scored").style.display="block";
+    window.alert("you score is  "+score+" / "+"30")
+}
+    </script>
+</body>
+</html>
