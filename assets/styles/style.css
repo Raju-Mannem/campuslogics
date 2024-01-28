@@ -171,6 +171,10 @@ nav ul li a:hover{
     .hideOnMobile{
         display: none;
     }
+    nav{
+        background: #eee;
+        box-shadow: 0 1px 0 #747264;
+    }
     .menu-button, .mobile-logo, .mobile-search-icon{
         display: inline-block;
         background: transparent;
@@ -185,10 +189,9 @@ nav ul li a:hover{
     }
     .mobile-search-icon{
         min-width: 80px;
-        max-width: 150px;
-        height: 60%;
-        margin-top: 10%;
-        color: #ffffff;
+        max-width: 100px;
+        height: 50%;
+        margin-top: 15%;
         margin-left: 30%;
     }
     .addbtn{
@@ -883,4 +886,9 @@ fieldset button{
 }
 .res span:nth-child(1){
     border-bottom: 1px dotted black;
+}
+#grand-test{
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(247,87,0,1) 0%, rgba(249,0,0,1) 90.1% );
+border: none;
+font-family: 'Open Sans', sans-serif;
 }
