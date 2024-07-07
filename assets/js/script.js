@@ -15,7 +15,6 @@ document.getElementById('sm-wh').href="https://www.whatsapp.com/channel/0029VaAr
 document.getElementById('sm-in').href="https://www.youtube.com/@Campuslogics";
 document.getElementById('sm-te').href="https://t.me/campuslogics";
 let nf = document.getElementById("nofound");
-
 function renderCards(query) {
     const cardContainer = document.getElementById('cardContainer');
     const cards = cardContainer.getElementsByClassName('card');
